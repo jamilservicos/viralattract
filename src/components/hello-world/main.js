@@ -11,7 +11,7 @@ const helloWordExample = [
     mainText,
     {
         element: "h4",
-        text: "come soon...."
+        text: "website under maintenance"
     }
 ];
 
