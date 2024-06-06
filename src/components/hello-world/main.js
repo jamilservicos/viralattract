@@ -1,5 +1,12 @@
 'use strict';
 
+const mainText = {
+    element: "img",
+    attr: {
+        src: "./assets/alien-loading.png"
+    }
+};
+
 const helloWordExample = [
     mainText,
     {
@@ -8,4 +15,4 @@ const helloWordExample = [
     }
 ];
 
-export default Object.freeze(helloWordExample);
+export const comeSoonPage = Object.freeze(helloWordExample);
