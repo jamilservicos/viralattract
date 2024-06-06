@@ -2,7 +2,7 @@
 
 import {CoreModule} from "@jamilservices/sb-core-module";
 import "@styles/main.scss";
-import {comeSoonPage} from "@components/come-soon/main.js";
+import {comeSoonPage} from "@components/hello-world/main.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     if(CoreModule && CoreModule.version.split(".")[0] >= 1) {
