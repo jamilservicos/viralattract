@@ -6,11 +6,19 @@ import { fileURLToPath } from 'node:url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
+    base: './',
     root: './src',
-    base: "./",
     build: {
         manifest: false,
-        outDir: '../build',
+        outDir: '../dist',
+        minify: 'terser',
+        target: "esnext",
+        terserOptions: {
+            mangle: false,
+        }
+    },
+    optimizeDeps: {
+        keepNames: true
     },
     css: {
         postcss: {
