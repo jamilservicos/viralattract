@@ -35,6 +35,11 @@
 }
 body {
   overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  gap: 0.25rem;
 }
 :where(ol, ul) {
   list-style: none;
@@ -45,9 +50,17 @@ body {
 :is(li.link) {
   cursor: var(--pointer-cursor);
 }
+:is(section.google-search) {
+  display: inline-block;
+  background-color: #333333;
+  inline-size: 100%;
+  padding: 2ch;
+  block-size: fit-content;
+}
 :is(section.canvas-container) {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
+  flex-grow: 1;
   align-items: center;
   justify-content: flex-start;
   gap: 0.25rem;
